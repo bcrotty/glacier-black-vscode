@@ -1,0 +1,155 @@
+/* This is a sample comment */
+@charset "utf-8";
+
+@import url("http://example.com");
+
+@font-face {
+  font-family: "Trickster";
+  src: local("Trickster"),
+    url("trickster-COLRv1.otf") format("opentype"),
+    url("trickster-outline.woff") format("woff");
+}
+
+.someClass * {
+  font-family: serif;
+  background-color: rgb(123, 234, 012);
+  transform: scale(1.5);
+}
+
+#someID text.date {
+  display: block;
+  background: yellow;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin-top: 20px;
+  background-image: conic-gradient(#00000000 85%, #fff);
+  background: linear-gradient(to right, red, #ffffff);
+}
+
+/* Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-size: 16px;
+}
+
+/* Selectors */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 10px;
+}
+
+.box h1 {
+  font-size: var(--font-size);
+  color: var(--primary-color);
+}
+
+.box p {
+  font-size: var(--font-size);
+  color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Pseudo-Classes */
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Box Model */
+.box {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Display Property */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Position Property */
+.box {
+  position: relative;
+}
+
+.box .inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Backgrounds */
+.box {
+  background-color: #f2f2f2;
+  background-image: url("image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Transitions */
+.box {
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Vendor Prefixes */
+.box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* @supports */
+.flex-container > * {
+  padding: 0.3em;
+  list-style-type: none;
+  text-shadow: 0 0 2px red;
+  float: left;
+}
+
+@supports (display: flex) {
+  .flex-container > * {
+    text-shadow: 0 0 2px blue;
+    float: none;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+}

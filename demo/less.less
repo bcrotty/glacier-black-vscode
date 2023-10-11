@@ -1,0 +1,77 @@
+// Variables
+@primary-color: #007bff;
+@secondary-color: #6c757d;
+@font-size: 16px;
+
+// Mixins
+.a, #b {
+  color: red;
+}
+.mixin-class {
+  .a();
+}
+.mixin-id {
+  #b();
+}
+
+// Nesting
+.container {
+  width: 100%;
+  margin: 0 auto;
+  .box {
+    padding: 10px;
+    h1 {
+      font-size: @font-size;
+      color: @primary-color;
+    }
+    p {
+      font-size: @font-size;
+      color: @secondary-color;
+    }
+  }
+}
+
+// Importing other Less files
+@import "variables.less";
+@import "mixins.less";
+
+// Operations
+@width: 100px;
+@height: 50px;
+div {
+  width: @width * 2;
+  height: @height + 10;
+}
+
+// Conditional statements
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+// Loops
+@counter: 0;
+.loop(@counter) when (@counter < 5) {
+  .item-@{counter} {
+    width: 10px * @counter;
+  }
+  .loop(@counter + 1);
+}
+.loop(0);
+
+// Using built-in functions
+@color: #ff0000;
+@light-color: lighten(@color, 20%);
+@dark-color: darken(@color, 20%);
+
+// Namespaces
+#namespace {
+  .button {
+    background: @primary-color;
+    color: white;
+    &:hover {
+      background: darken(@primary-color, 10%);
+    }
+  }
+}

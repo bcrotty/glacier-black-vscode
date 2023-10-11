@@ -1,0 +1,271 @@
+@use 'base'
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-size: 16px;
+
+// Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Nesting
+.container {
+  width: 100%;
+  margin: 0 auto;
+  .box {
+    padding: 10px;
+    h1 {
+      font-size: $font-size;
+      color: $primary-color;
+    }
+    p {
+      font-size: $font-size;
+      color: $secondary-color;
+    }
+  }
+}
+
+// Importing other Sass files
+@import "variables.scss";
+@import "mixins.scss";
+
+// Operations
+$width: 100px;
+$height: 50px;
+div {
+  width: $width * 2;
+  height: $height + 10;
+}
+
+// Conditional statements
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+// Loops
+$counter: 0;
+@while $counter < 5 {
+  .item-#{$counter} {
+    width: 10px * $counter;
+  }
+  $counter: $counter + 1;
+}
+
+// Using built-in functions
+$color: #ff0000;
+$light-color: lighten($color, 20%);
+$dark-color: darken($color, 20%);
+
+// Placeholder selectors
+%button {
+  background: $primary-color;
+  color: white;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+#namespace {
+  .button {
+    @extend %button;
+  }
+}
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    display: inline-block
+
+  a
+    display: block
+    padding: 6px 12px
+    text-decoration: none
+
+.inverse
+  background-color: base.$primary-color
+  color: white
+
+@mixin theme($theme: DarkGray)
+  background: $theme
+  box-shadow: 0 0 1px rgba($theme, .25)
+  color: #fff
+
+.alert
+  @include theme($theme: DarkRed)
+
+%message-shared
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+
+.success
+  @extend %message-shared
+  border-color: green
+
+
+/* This is a sample comment */
+@charset "utf-8";
+
+@import url("http://example.com");
+
+@font-face {
+  font-family: "Trickster";
+  src: local("Trickster"),
+    url("trickster-COLRv1.otf") format("opentype") tech(color-COLRv1), url("trickster-outline.otf")
+      format("opentype"), url("trickster-outline.woff") format("woff");
+}
+
+.someClass * {
+  font-family: serif;
+  background-color: rgb(123,234,012);
+}
+
+#someID text.date {
+  display: block;
+  background: yellow;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin-top: 20px;
+  background-image: conic-gradient(#00000000 85%, #fff);
+}
+
+/* Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-size: 16px;
+}
+
+/* Selectors */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 10px;
+}
+
+.box h1 {
+  font-size: var(--font-size);
+  color: var(--primary-color);
+}
+
+.box p {
+  font-size: var(--font-size);
+  color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Pseudo-Classes */
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Box Model */
+.box {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Display Property */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Position Property */
+.box {
+  position: relative;
+}
+
+.box .inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Backgrounds */
+.box {
+  background-color: #f2f2f2;
+  background-image: url('image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Transitions */
+.box {
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Vendor Prefixes */
+.box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* @supports */
+.flex-container > * {
+  padding: 0.3em;
+  list-style-type: none;
+  text-shadow: 0 0 2px red;
+  float: left;
+}
+
+@supports (display: flex) {
+  .flex-container > * {
+      text-shadow: 0 0 2px blue;
+      float: none;
+  }
+
+  .flex-container {
+      display: flex;
+  }
+}
