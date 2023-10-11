@@ -6,7 +6,9 @@ Glacier Black is a sleek and colorful theme for Visual Studio Code inspired by t
 
 ## About
 
-Glacier has been a personal favorite color scheme for a long time. I'm grateful to [Daniel Imms](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) and [Kal](https://marketplace.visualstudio.com/items?itemName=Kal.theme-glacier) for porting it from Sublime Text. However, their versions do not fully skin the entire interface, which led to me creating Glacier Black.
+![Color Palette](images/color-palette.png)
+
+Glacier has been a personal favorite color scheme for a long time. I'm grateful to [Daniel Imms](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) and [Kal](https://marketplace.visualstudio.com/items?itemName=Kal.theme-glacier) for porting it from Sublime Text. However, their versions do not skin the whole interface, which led to me creating my own. Glacier Black also uses Glacier's newer color palette.
 
 ## Installation
 
