@@ -48,7 +48,7 @@ To enhance your experience with the Glacier Black theme, you can apply these per
 "workbench.preferredLightColorTheme": "Monokai Light",
 ```
 
-### Recommended Font
+### Font
 For the best experience with Glacier Black, I recommend using the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) version of [Fira Code](https://github.com/tonsky/FiraCode). Nerd Fonts include a variety of extra glyphs that can be useful for developers.
 
 ### Light Theme
