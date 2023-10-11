@@ -1,8 +1,9 @@
 {
   "name": "glacier-black",
-  "displayName": "Glacier Black",
-  "description": "Glacier is a flat, colorful theme for Visual Studio Code",
   "version": "1.0.0",
+  "displayName": "Glacier Black",
+  "description": "Glacier Black is a sleek and colorful theme for Visual Studio Code",
+  "publisher": "BobbyCrotty",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -17,5 +18,14 @@
         "path": "./themes/glacier-black.json"
       }
     ]
-  }
+  },
+  "icon": "images/icon.png",
+  "bugs": {
+    "url": "https://github.com/bcrotty/glacier-black-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcrotty/glacier-black-vscode.git"
+  },
+  "homepage": "https://github.com/bcrotty/glacier-black-vscode/blob/main/README.md"
 }
