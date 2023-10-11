@@ -58,4 +58,4 @@ For daytime use, I recommend the [Monokai Light](https://marketplace.visualstudi
 Thanks for checking out Glacier Black! Feel free to customize these settings to suit your preferences. Enjoy coding!
 
 ## Acknowledgements
-Beyond those mentioned above, I'd like to thank [Sarah Drasner](https://github.com/sdras) for her [sample code files](https://github.com/sdras/night-owl-vscode-theme).
+Beyond those mentioned above, I'd like to thank [Sarah Drasner](https://github.com/sdras) for her excellent [Night Owl](https://github.com/sdras/night-owl-vscode-theme) theme and code samples, which were a tremendous help in creating Glacier Black.
