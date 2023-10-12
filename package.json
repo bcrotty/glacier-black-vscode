@@ -1,8 +1,8 @@
 {
   "name": "glacier-black",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Glacier Black",
-  "description": "Glacier Black is a sleek and colorful theme for Visual Studio Code",
+  "description": "A sleek and colorful dark theme for Visual Studio Code",
   "publisher": "BobbyCrotty",
   "engines": {
     "vscode": "^1.76.0"
