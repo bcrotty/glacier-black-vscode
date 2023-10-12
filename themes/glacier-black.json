@@ -440,7 +440,10 @@
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "namespace": "#75FFCD",
+    "namespace": {
+      "foreground": "#75FFCD",
+      "fontStyle": "bold"
+    },
     "class": {
       "foreground": "#3CAED7",
       "fontStyle": "bold"
@@ -464,13 +467,10 @@
       "fontStyle": "italic bold"
     },
     "parameter": "#FFB452",
-    "property": {
-      "foreground": "#75FFCD",
-      "fontStyle": "bold"
-    },
+    "property": "#75FFCD",
     "property.readonly": {
       "foreground": "#75FFCD",
-      "fontStyle": "italic bold"
+      "fontStyle": "italic"
     },
     // "comment": "#515B67",
     // "string": "#F7EF9C",
@@ -502,7 +502,7 @@
       "name": "Entity inherited-class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "italic bold",
         "foreground": "#4BBE96"
       }
     },
@@ -510,14 +510,16 @@
       "name": "Entity name namespace",
       "scope": "entity.name.namespace",
       "settings": {
-        "foreground": "#75FFCD"
+        "foreground": "#75FFCD",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "Entity name type class",
       "scope": "entity.name.type.class",
       "settings": {
-        "foreground": "#3CAED7"
+        "foreground": "#3CAED7",
+        "fontStyle": "bold"
       }
     },
     {
