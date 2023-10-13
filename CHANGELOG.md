@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2023-10-14
+- Further fixes for use of bold in functions and decorators
+
 ## [1.0.3] - 2023-10-13
 
 - Made use of bold more logically consistent for classes, namespaces, properties, and function

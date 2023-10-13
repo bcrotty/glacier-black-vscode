@@ -448,12 +448,18 @@
       "foreground": "#3CAED7",
       "fontStyle": "bold"
     },
-    "class.decorator": "#BF33C7",
+    "class.decorator": {
+      "foreground": "#BF33C7",
+      "bold": false
+    },
     "class.defaultLibrary": {
       "foreground": "#3CAED7",
       "fontStyle": "italic bold"
     },
-    "function": "#3CAED7",
+    "function": {
+      "foreground": "#3CAED7",
+      "bold": false
+    },
     "method": "#3CAED7",
     "variable": {
       "foreground": "#F04242",
