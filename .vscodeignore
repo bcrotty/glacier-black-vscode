@@ -1,4 +1,7 @@
+.history/**
 .vscode/**
 .vscode-test/**
+demo/**
 .gitignore
-vsc-extension-quickstart.md
+**/*.vsix
+**/*.ps1
