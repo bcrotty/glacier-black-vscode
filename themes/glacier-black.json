@@ -448,10 +448,7 @@
       "foreground": "#3CAED7",
       "fontStyle": "bold"
     },
-    "class.decorator": {
-      "foreground": "#BF33C7",
-      "fontStyle": "bold"
-    },
+    "class.decorator": "#BF33C7",
     "class.defaultLibrary": {
       "foreground": "#3CAED7",
       "fontStyle": "italic bold"
@@ -471,7 +468,7 @@
     "property.readonly": {
       "foreground": "#75FFCD",
       "fontStyle": "italic"
-    },
+    }
     // "comment": "#515B67",
     // "string": "#F7EF9C",
     // "keyword": "#F04242"
