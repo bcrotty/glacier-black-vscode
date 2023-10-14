@@ -470,10 +470,14 @@
       "fontStyle": "italic bold"
     },
     "parameter": "#FFB452",
-    "property": "#75FFCD",
+    "property": {
+      "foreground": "#75FFCD",
+      "bold": false
+    },
     "property.readonly": {
       "foreground": "#75FFCD",
-      "fontStyle": "italic"
+      "italic": true,
+      "bold": false
     }
     // "comment": "#515B67",
     // "string": "#F7EF9C",

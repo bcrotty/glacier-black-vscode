@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.0.4] - 2023-10-14
-- Further fixes for use of bold in functions and decorators
+- Further fixes for use of bold in functions, decorators, and properties
 
 ## [1.0.3] - 2023-10-13
 
