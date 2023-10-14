@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Glacier (Adapted)",
+  "name": "Glacier Black",
   "type": "dark",
   "colors": {
     "activityBar.activeBackground": "#0E141B",
