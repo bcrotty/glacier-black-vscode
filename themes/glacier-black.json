@@ -478,8 +478,8 @@
       "foreground": "#75FFCD",
       "italic": true,
       "bold": false
-    }
-    // "comment": "#515B67",
+    },
+    // "comment": "#B0B3BA99",
     // "string": "#F7EF9C",
     // "keyword": "#F04242"
   },
@@ -488,7 +488,7 @@
       "name": "Comment",
       "scope": "comment",
       "settings": {
-        "foreground": "#515B67"
+        "foreground": "#B0B3BA99"
       }
     },
     {
@@ -1032,27 +1032,6 @@
       "scope": ["punctuation.definition.array"],
       "settings": {
         "foreground": "#F57542"
-      }
-    },
-    {
-      "name": "Yaml entity",
-      "scope": "yaml.entity",
-      "settings": {
-        "foreground": "#3CAED7"
-      }
-    },
-    {
-      "name": "Yaml punctuation",
-      "scope": "yaml.punctuation",
-      "settings": {
-        "foreground": "#E6E6E6"
-      }
-    },
-    {
-      "name": "Yaml comment",
-      "scope": "yaml.comment",
-      "settings": {
-        "foreground": "#515B67"
       }
     },
     {

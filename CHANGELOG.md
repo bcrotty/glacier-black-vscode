@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2023-10-20
+- Made comments more visible so they won't be as hard to see when selected
+- Removed unused YAML rules
+
 ## [1.0.4] - 2023-10-14
 - Further fixes for use of bold in functions, decorators, and properties
 
