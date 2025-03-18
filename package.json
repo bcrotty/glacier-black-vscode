@@ -1,8 +1,8 @@
 {
-  "name": "glacier-black",
-  "version": "1.0.5",
-  "displayName": "Glacier Black",
-  "description": "A sleek and colorful dark theme for Visual Studio Code",
+  "name": "glacier-black-and-white",
+  "version": "1.1.0",
+  "displayName": "Glacier Black & White",
+  "description": "Sleek, colorful dual theme for Visual Studio Code",
   "publisher": "BobbyCrotty",
   "engines": {
     "vscode": "^1.76.0"
@@ -10,12 +10,26 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "dark",
+    "light",
+    "dual",
+    "glacier",
+    "colorful",
+    "glacier black",
+    "glacier white"
+  ],
   "contributes": {
     "themes": [
       {
         "label": "Glacier Black",
         "uiTheme": "vs-dark",
         "path": "./themes/glacier-black.json"
+      },
+      {
+        "label": "Glacier White",
+        "uiTheme": "vs",
+        "path": "./themes/glacier-white.json"
       }
     ]
   },

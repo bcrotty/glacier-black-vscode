@@ -3,8 +3,12 @@ from time import sleep
 
 import numpy as np
 
+x = 10
 
 def topo(G, ind=None, Q=[1]):
+    global controlFlag
+    controlFlag = 10
+
     if ind == None:
         ind = [0] * (len(G) + 1)  # this is a comment
         for u in G:
@@ -12,7 +16,7 @@ def topo(G, ind=None, Q=[1]):
                 ind[v] += 1
         Q = deque()
         for i in G:
-            if ind[i] == 0:
+            if ind[min(i)] == 0:
                 Q.append(i)
     if len(Q) == 0:
         return

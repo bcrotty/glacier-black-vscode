@@ -1,65 +1,80 @@
-# Glacier Black
+# Glacier Black & White
 
-Glacier Black is a sleek and colorful dark theme for Visual Studio Code inspired by the Sublime Text theme [Glacier](https://github.com/shovelandsandbox/glacier-theme) by [Joey Figaro](https://github.com/joeyfigaro).
+*Glacier Black & White* is a sleek, colorful theme duo for Visual Studio Code, inspired by the
+Sublime Text theme [Glacier](https://github.com/shovelandsandbox/glacier-theme) by [Joey
+Figaro](https://github.com/joeyfigaro). Featuring the bold *Glacier Black* and its daytime alter-ego
+*Glacier White*, this theme provides a cohesive, vibrant experience day or night.
 
-![Glacier Black](images/screenshot.png)
+![Glacier Black & White](images/screenshot.gif)
 
 ## About
 
-![Color Palette](images/color-palette.png)
-
-Glacier has been a personal favorite color scheme for a long time. I'm grateful to [Daniel Imms](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) and [Kal](https://marketplace.visualstudio.com/items?itemName=Kal.theme-glacier) for porting it from Sublime Text. However, their versions do not skin the whole interface, which led to me creating my own. Glacier Black also uses Glacier's newer color palette.
+*Glacier Black & White* stems from my long-time love for the Glacier color scheme. [Daniel
+Imms](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) and
+[Kal](https://marketplace.visualstudio.com/items?itemName=Kal.theme-glacier) ported Glacier to VS
+Code, but their versions left the UI unstyled, so I created *Glacier Black* to fully theme the
+interface using Glacier's newer palette. Now, *Glacier White* joins it, flipping the same palette
+into a light scheme with a tweak to the yellows for visibility.
 
 ## Installation
 
-To install the Glacier Black theme in Visual Studio Code, follow these steps:
+To install *Glacier Black & White* in Visual Studio Code:
 
-1.  Click the Extensions button in Visual Studio Code.
-2.  Search for `Glacier Black`.
-3.  Click **Install**.
-4.  If the theme picker doesn't come up, open the Command Palette (Ctrl/Cmd+Shift+P) and search for `Color Theme`.
-5.  Click Glacier Black on the popup menu.
+1. Click the Extensions button in the sidebar.
+2. Search for `Glacier Black & White`.
+3. Click **Install**.
+4. Open the Command Palette (Ctrl/Cmd+Shift+P), search for `Color Theme`, and pick *Glacier Black* or *Glacier White*.
 
-## Recommendedations
+## Recommended Settings
 
-### Visual Studio Code Settings
+Enhance your experience with these VS Code settings. Open the Command Palette (Ctrl/Cmd+Shift+P), select `Open User Settings (JSON)`, and paste the following. These tweaks optimize the themes and reflect my personal VS Code preferences. Note: the ligature codes are specific to Fira Code.
 
-To customize your Visual Studio Code experience, you can apply these settings. Open the Command Palette (Ctrl/Cmd+Shift+P) and search for `Open User Settings (JSON)`. Then, paste the following settings into the JSON file. These settings include both theme-specific options and some of my personal preferences for VS Code's behavior. Please note that the `editor.fontLigatures` setting is specific to using the Fira Code font.
-
+```json
+{
+  "editor.fontFamily": "FiraCode Nerd Font, Fira Code",
+  "editor.fontLigatures": "'cv02', 'ss01', 'zero', 'ss03', 'cv18', 'cv29', 'cv30', 'ss09', 'cv06', 'ss04'",
+  "editor.renderControlCharacters": true,
+  "editor.renderFinalNewline": "dimmed",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [100],
+  "editor.stickyScroll.enabled": true,
+  "editor.wordWrap": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font, Fira Code",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontLigatures.featureSettings": "'cv02', 'ss01', 'zero', 'ss03', 'cv18', 'cv29', 'cv30', 'ss09', 'cv06', 'ss04'",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Glacier Black",
+  "workbench.preferredDarkColorTheme": "Glacier Black",
+  "workbench.preferredLightColorTheme": "Glacier White"
+}
 ```
-"editor.fontFamily": "FiraCode Nerd Font, Fira Code, Consolas, Menlo, Monaco, Courier New, monospace",
-"editor.fontLigatures": "'cv02', 'ss01', 'zero', 'ss03', 'cv18', 'cv29', 'cv30', 'ss09'"
-"editor.renderControlCharacters": true,
-"editor.renderFinalNewline": "dimmed",
-"editor.renderWhitespace": "boundary",
-"editor.rulers": [100],
-"editor.stickyScroll.enabled": true,
-"editor.wordWrap": "off",
-"files.insertFinalNewline": true,
-"files.trimFinalNewlines": true,
-"files.trimTrailingWhitespace": true,
-"terminal.integrated.cursorBlinking": true,
-"terminal.integrated.cursorStyle": "line",
-"terminal.integrated.cursorWidth": 2,
-"terminal.integrated.fontFamily": "FiraCode Nerd Font, Fira Code, Consolas, Menlo, Monaco, Courier New, monospace",
-"window.autoDetectColorScheme": true,
-"workbench.colorTheme": "Glacier Black",
-"workbench.preferredDarkColorTheme": "Glacier Black",
-"workbench.preferredLightColorTheme": "Monokai Light",
-```
 
-### Font
+### Font Recommendation
 
-For the best experience with Glacier Black, I recommend using the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) version of [Fira Code](https://github.com/tonsky/FiraCode). Nerd Fonts include a variety of extra glyphs that can be useful for developers.
+Pair *Glacier Black & White* with the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) version of [Fira Code](https://github.com/tonsky/FiraCode) for the best look. Nerd Fonts add glyphs such as powerline symbols and icons to existing fonts.
 
-### Light Theme
+## Color Palette
 
-For daytime use and a similar feel, I recommend the [Monokai Light](https://marketplace.visualstudio.com/items?itemName=anoff.theme-monokai-light) theme.
+![Color Palette](images/color-palette.png)
+
+This palette powers both *Glacier Black* and *Glacier White*. *Glacier White* flips the lighter and
+darker colors in most places. In some cases, the lighter yellow color (`#F7EF9C`) did not have enough
+contrast with the lighter backgrounds in *Glacier White*, so I introduced a richer golden color
+(`#C4A010`) there.
 
 ## Thanks!
 
-Thanks for checking out Glacier Black! Feel free to customize these settings to suit your preferences. Enjoy coding!
+Thanks for checking out *Glacier Black & White*! Tweak the settings to your taste and enjoy coding in style. Please [let me know](https://github.com/bcrotty/glacier-black-vscode/issues) if you have any feedback!
 
 ## Acknowledgements
 
-Beyond those mentioned above, I'd like to thank [Sarah Drasner](https://github.com/sdras) for her excellent [Night Owl](https://github.com/sdras/night-owl-vscode-theme) theme and code samples, which were a tremendous help in creating Glacier Black.
+Big thanks to:
+- [Joey Figaro](https://github.com/joeyfigaro) for the original Glacier theme.
+- [Daniel Imms](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) and [Kal](https://marketplace.visualstudio.com/items?itemName=Kal.theme-glacier) for their ports.
+- [Sarah Drasner](https://github.com/sdras) for her [Night Owl](https://github.com/sdras/night-owl-vscode-theme) theme, which guided my approach.
